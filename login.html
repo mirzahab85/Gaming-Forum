@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	
+<style>
+
+body {
+	background:black;
+	color:white;
+}
+
+form {
+  width:260px;
+  margin-left:640px;
+  margin-top:320px;
+}
+
+#dugme{
+	margin-left:730px;
+	margin-top:20px;
+	background-color:black;
+	color:white;
+	height:25px;
+	width:100px;
+}
+
+#error {
+	margin-left:750px;
+}
+
+h1 {
+	left:44%;
+	position:absolute;
+	top:25%;
+}
+
+#uname {
+	margin-left:6px;
+}
+
+#psw {
+	margin-left:8.8px;
+}
+
+</style>
+</head>
+<body>
+
+<h1> Admin Login </h1>
+
+<form action="/gba.html">
+<fieldset>
+
+<label for="uname"><b>Username</b></label>
+<input type="text" id="uname" required>
+
+<br><br>
+
+<label for="psw"><b>Password</b></label>
+<input type="password" id="psw" required>
+
+</fieldset>
+</form>
+
+<p id="error"></p>
+<button id="dugme" onClick="validiraj()">ENTER</button>
+
+<script>
+
+function validiraj() {
+	document.getElementById("error").style.marginLeft = "690px";
+	if (document.getElementById("uname").value == "" && document.getElementById("psw").value == "") {
+		document.getElementById("error").innerHTML = "Molimo unesite username i password!";
+		document.getElementById("error").style.marginLeft = "650px";
+	}
+	else if(document.getElementById("uname").value == "")
+		document.getElementById("error").innerHTML = "Molimo unesite username!";
+	else if(document.getElementById("psw").value == "")
+		document.getElementById("error").innerHTML = "Molimo unesite password!";
+	else if(document.getElementById("uname").value == "admin" && document.getElementById("psw").value == "123456")
+		location.replace("gba.html");
+	else 
+		document.getElementById("error").innerHTML = "Pogrešan username/password!";
+		
+	document.getElementById("error").style.color = "red";
+	
+}
+
+
+</script>
+
+</body>
+</html>

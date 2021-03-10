@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<head>
+	<title>G.ba</title>
+
+
+<style>
+
+body {
+	background-color:black;
+	color:white;
+}
+
+button {
+	float:right;
+	margin-right:25px;
+}
+
+#ispis1, #ispis2, #ispis3, #ispis4, #ispis5, #bodovi {
+	float:right;
+	margin-right:100px;
+}
+
+#bodovi {
+	font-size:18px;
+	color: yellow;
+}
+
+.korisnik{
+	font-size:12px;
+	color:brown;
+}
+
+#stranica {
+	position:relative;
+	left: 40%;
+	color:brown;
+}
+
+h1 {
+	text-align:center;
+}
+
+</style>
+
+<script>
+
+var bodovi = 0;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+function funkcija1() {
+
+document.getElementById("ispis1").innerHTML = "Post dobio šamar od Admin";
+document.getElementById("ispis1").style.color = "red";
+bodovi = bodovi - 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+function funkcija2() {
+
+document.getElementById("ispis1").innerHTML = "Post dobio aplauz od Admin";
+document.getElementById("ispis1").style.color = "lightgreen";
+bodovi = bodovi + 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+function funkcija3() {
+
+document.getElementById("ispis2").innerHTML = "Post dobio šamar od Admin";
+document.getElementById("ispis2").style.color = "red";
+bodovi = bodovi - 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+function funkcija4() {
+
+document.getElementById("ispis2").innerHTML = "Post dobio aplauz od Admin";
+document.getElementById("ispis2").style.color = "lightgreen";
+bodovi = bodovi + 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+function funkcija5() {
+
+document.getElementById("ispis3").innerHTML = "Post dobio šamar od Admin";
+document.getElementById("ispis3").style.color = "red";
+bodovi = bodovi - 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+function funkcija6() {
+
+document.getElementById("ispis3").innerHTML = "Post dobio aplauz od Admin";
+document.getElementById("ispis3").style.color = "lightgreen";
+bodovi = bodovi + 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+function funkcija7() {
+
+document.getElementById("ispis4").innerHTML = "Post dobio šamar od Admin";
+document.getElementById("ispis4").style.color = "red";
+bodovi = bodovi - 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+function funkcija8() {
+
+document.getElementById("ispis4").innerHTML = "Post dobio aplauz od Admin";
+document.getElementById("ispis4").style.color = "lightgreen";
+bodovi = bodovi + 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+function funkcija9() {
+
+document.getElementById("ispis5").innerHTML = "Post dobio šamar od Admin";
+document.getElementById("ispis5").style.color = "red";
+bodovi = bodovi - 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+function funkcija10() {
+
+document.getElementById("ispis5").innerHTML = "Post dobio aplauz od Admin";
+document.getElementById("ispis5").style.color = "lightgreen";
+bodovi = bodovi + 10;
+document.getElementById("bodovi").innerHTML = "Broj bodova: " + bodovi;
+
+}
+
+</script>
+
+</head>
+<body>
+
+<h1> Coffe Shop </h1>
+
+<div class="tekst">
+<fieldset>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<button onclick="funkcija1()" id="dugme1">Šamar</button>
+<button onclick="funkcija2()">Aplauz</button>
+<p id="ispis1"></p>
+<span class="korisnik">Napisao K1LL3R | 12/08/2020</span>
+</fieldset>
+</div>
+
+
+<div class="tekst">
+<fieldset>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<button onclick="funkcija3()">Šamar</button>
+<button onclick="funkcija4()">Aplauz</button>
+<p id="ispis2"></p>
+<span class="korisnik">Napisao G@M3R | 12/12/2020</span>
+</fieldset>
+</div>
+
+<div class="tekst">
+<fieldset>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<button onclick="funkcija5()">Šamar</button>
+<button onclick="funkcija6()">Aplauz</button>
+<p id="ispis3"></p>
+<span class="korisnik">Napisao p@c0V | 25/12/2020</span>
+</fieldset>
+</div>
+
+<div class="tekst">
+<fieldset>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<button onclick="funkcija7()">Šamar</button>
+<button onclick="funkcija8()">Aplauz</button>
+<p id="ispis4"></p>
+<span class="korisnik">Napisao M!k1 | 6/08/2020</span>
+</fieldset>
+</div>
+
+<div class="tekst">
+<fieldset>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<button onclick="funkcija9()">Šamar</button>
+<button onclick="funkcija10()">Aplauz</button>
+<p id="ispis5"></p>
+<span class="korisnik">Napisao raT | 5/01/2020</span>
+</fieldset>
+</div>
+
+<br>
+<span id="stranica"> Prethodna stranica (5/90) Sljedeća stranica </span>
+
+<p id="bodovi"></p>
+
+</body>
+</html>
